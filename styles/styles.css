@@ -45,7 +45,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/image/gor-min.jpg);
+    url(./image/gor-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
