@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+}
+img {
+  display: block;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+address {
+  font-style: normal;
+}
+body {
+  background: #2e2f42;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/image/gor-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 30px;
+  padding: 20px;
+  background-color: rgba(46, 47, 66, 0.5);
+  color: aliceblue;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.display-container {
+  display: flex;
+  flex-direction: column;
+  margin-block: 40px 30px;
+}
+.history {
+  width: 100%;
+  height: 30px;
+  text-align: right;
+  color: antiquewhite;
+  font-weight: 300;
+}
+.display {
+  font-size: 50px;
+  font-weight: 100;
+  height: 70px;
+  width: 100%;
+  text-align: right;
+  outline: none;
+  border: none;
+  pointer-events: none;
+  background: transparent;
+}
+::placeholder {
+  color: aliceblue;
+}
+.btn-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 15px;
+}
+.btn {
+  width: 75px;
+  height: 75px;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: #2e2f42;
+  color: beige;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+}
+.btn-operator.btn {
+  background-color: cadetblue;
+}
+.btn-equals.btn {
+  width: calc(50% - 8px);
+  border-radius: 30%;
+  text-align: left;
+  padding-left: 35px;
+}
+.btn-operator-light.btn {
+  background-color: darkcyan;
+}
+.btn:active {
+  transform: scale(0.95);
+}
+@media screen and (max-width: 376px) {
+  .display {
+    font-size: 40px;
+  }
+  .btn-list {
+    row-gap: 10px;
+  }
+  .btn {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .container {
+    max-width: 300px;
+  }
+}
